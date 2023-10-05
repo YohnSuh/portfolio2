@@ -1,0 +1,29 @@
+@media all and (min-width: 769px) {
+    header {
+        background-color: black;
+    }
+    header .header-bg, header.mo-menu-on .header-bg {display: none;}
+    header .hWrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 768px;
+        margin: 0 auto;
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+    header .hamburger {display: none;}
+    header nav {display: block;}
+    header .gnb {
+        display: flex;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    header .gnb li {
+        padding: 0 25px;
+        font-size: 14px;
+    }
+    header .util {display: flex;}
+}

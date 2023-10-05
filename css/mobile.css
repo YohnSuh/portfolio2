@@ -1,0 +1,77 @@
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+header .header-bg {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.5);
+    backdrop-filter: blur(10px);
+}
+header .hWrap {
+    position: relative; 
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    /* background-color: black; */
+    color: white;
+}
+header .header-logo-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .logo img {
+    width: 25px;
+}
+header .hamburger {
+    position: relative;
+    width: 20px;
+    height: 20px;
+}
+header .hamburger span {
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    left: 0;
+    background-color: white;
+    cursor: pointer;
+}
+header .hamburger span:nth-child(1) {top: 0;}
+header .hamburger span:nth-child(2) {top: calc(50% - 2px);}
+header .hamburger span:nth-child(3) {top: calc(100% - 4px);}
+header nav {display: none;}
+header .gnb {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+header .gnb li {
+    padding: 5px 0;
+    font-size: 12px;
+}
+header .util {
+    display: none;
+    justify-content: center;
+}
+header .util li {
+    padding: 0 10px;
+}
+
+/* 헤더 제이쿼리 적용 */
+header.mo-menu-on .header-bg {display: block;}
+header.mo-menu-on .hWrap {background-color: black;}
+header.mo-menu-on nav {display: block;}
+header.mo-menu-on .util {display: flex;}
+
+/* 모바일 메인 */
+.main {
+    
+}
