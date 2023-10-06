@@ -6,4 +6,27 @@
         padding: 0 25px;
         font-size: 16px;
     }
+
+    /* main */
+    .main .mainWrap {
+        width: 1200px;
+    }
+    .main div[class^="main-item"] {
+        height: 678px;
+    }
+    .main .mainTextWrap {
+        left: 100px;
+        width: 700px;
+    }
+    .main .mainTextWrap h2 {font-size: 86px;}
+    .main .mainTextWrap p {
+        font-size: 20px;
+        margin-top: 10px;
+        width: 550px;
+    }
+
+    /* 카테고리 */
+    .category ul li h2 {font-size: 48px;}
+    .category .category-txt p {font-size: 18px;}
+    .category .category-txt a {font-size: 16px;}
 }

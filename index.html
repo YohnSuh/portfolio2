@@ -8,8 +8,10 @@
     <link href="css/mobile.css" rel="stylesheet">
     <link href="css/tablet.css" rel="stylesheet">
     <link href="css/pc.css" rel="stylesheet">
+    <link href="css/slick.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/7c72cc71ff.js" crossorigin="anonymous"></script>
     <script src="js/jquery-3.7.0.min.js"></script>
+    <script src="js/plugin/slick.min.js"></script>
     <script src="js/style.js"></script>
 </head>
 <body>
@@ -44,15 +46,104 @@
     </header>
 
     <div class="main">
-        <div class="main-item1">
+        <div class="mainWrap">
+            <!-- 메인 화면1 -->
+            <div class="main-item1">
+                <video class="pc-bg-video" autoplay muted loop>
+                    <source src="images/main1.m4v">
+                </video>
+                <div class="main-mo-box">
+                    <h2>BEOSOUND EXPLORE</h2>
+                    <p>등산. 동굴 다이빙. 그리고 그 사이의 모든 것. Beosound Explore는 극한의 성능을 위해 설계된 고성능 실외 스피커입니다.</p>
+                    <a href="#">제품 보기</a>
+                </div><!--main-text-box-->
+            </div><!--main-item1-->
+
+            <!-- 메인 화면2-->
+            <div class="main-item2">
+                <video class="pc-bg-video" autoplay muted loop>
+                    <source src="images/main2.mp4">
+                </video>
+                <div class="main-mo-box">
+                    <h2>BEOPLAY HX</h2>
+                    <p>무선 노이즈 캔슬링 헤드폰. 통화 중이든, 재택근무 중이든, 나만의 시간을 갖는 중이든 편안하게 들을 수 있습니다.</p>
+                    <a href="#">제품 보기</a>
+                </div><!--main-text-box-->
+            </div><!--main-item2-->
             
-        </div><!--main-item1-->
-        <div class="main-item2">
-            
-        </div><!--main-item2-->
-        <div class="main-item3">
-            
-        </div><!--main-item3-->
+            <!-- 메인 화면3 -->
+            <div class="main-item3">
+                <video class="pc-bg-video" autoplay muted loop>
+                    <source src="images/main3.mp4">
+                </video>
+                <div class="main-mo-box">
+                    <h2>BEOPLAY EX FERRARI EDITION</h2>
+                    <p>페라리 레드 패키지의 아름다운 디자인만큼 뛰어난 다양성을 지닌 이어버드는 깊고 풍부한 사운드와 편안한 착용감을 제공합니다.</p>
+                    <a href="#">제품 보기</a>
+                </div><!--main-text-box-->
+            </div><!--main-item3-->
+        </div><!--mainWrap-->
+        <!-- pc 텍스트 -->
+        <div class="mainTextWrap">
+            <div class="main-pc-box">
+                <h2>BEOSOUND<br>EXPLORE</h2>
+                <p>등산. 동굴 다이빙. 그리고 그 사이의 모든 것. Beosound Explore는 극한의 성능을 위해 설계된 고성능 실외 스피커입니다.</p>
+                <a href="#">제품 보기</a>
+            </div><!--main-pc-box-->
+            <div class="main-pc-box">
+                <h2>BEOPLAY HX</h2>
+                <p>무선 노이즈 캔슬링 헤드폰. 통화 중이든, 재택근무 중이든, 나만의 시간을 갖는 중이든 편안하게 들을 수 있습니다.</p>
+                <a href="#">제품 보기</a>
+            </div><!--main-pc-box-->
+            <div class="main-pc-box">
+                <h2>BEOPLAY EX<br>FERRARI EDITION</h2>
+                <p>페라리 레드 패키지의 아름다운 디자인만큼 뛰어난 다양성을 지닌 이어버드는 깊고 풍부한 사운드와 편안한 착용감을 제공합니다.</p>
+                <a href="#">제품 보기</a>
+            </div><!--main-pc-box-->
+        </div><!--mainTextWrap-->
     </div><!--main-->
+
+    <div class="category">
+        <div class="cateWrap">
+            <ul>
+                <li class="speaker">
+                    <div>
+                        <h2>SPEAKER</h2>
+                        <div class="category-txt">
+                            <p>내가 원하는 곳 어디에서나 영혼을 울리는 사운드</p>
+                            <a href="#">View More</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="headphone">
+                    <div>
+                        <h2>HEADPHONE</h2>
+                        <div class="category-txt">
+                            <p>발끝을 들썩이게 하며 나를 따라오는 음악</p>
+                            <a href="#">View More</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="tv">
+                    <div>
+                        <h2>TV</h2>
+                        <div class="category-txt">
+                            <p>뛰어난 사운드와 동급 최고의 OLED 화면이 결합</p>
+                            <a href="#">View More</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="soundbar">
+                    <div>
+                        <h2>SOUNDBAR</h2>
+                        <div class="category-txt">
+                            <p>그 자체만으로도 웅장한 사운드를 제공</p>
+                            <a href="#">View More</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div><!--cateWrap-->
+    </div><!--category-->
 </body>
 </html>

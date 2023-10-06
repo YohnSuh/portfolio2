@@ -12,4 +12,17 @@ $(document).ready(function() {
     // 모바일에서 햄버거 메뉴 클릭 시
     $('.hamburger').click(hamMenuClick);
     $('.header-bg').click(mBackgroundOn);
+
+    // 메인 화면 슬라이드
+    $('.mainWrap').slick({
+        asNavFor : '.mainTextWrap'
+    ,   autoplay : true
+    ,   autoplaySpeed : 5000
+    });
+    $('.mainTextWrap').slick({
+        asNavFor : '.mainWrap'
+    ,   fade : true
+    });
 });
+
+    
