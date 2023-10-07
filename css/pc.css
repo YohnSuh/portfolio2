@@ -24,9 +24,71 @@
         margin-top: 10px;
         width: 550px;
     }
-
+    .main .mainTextWrap a {
+        font-size: 18px;
+        padding: 8px 72px;
+    }
     /* 카테고리 */
     .category ul li h2 {font-size: 48px;}
     .category .category-txt p {font-size: 18px;}
     .category .category-txt a {font-size: 16px;}
+
+    /* 뱅앤올룹슨의 역사 */
+    .history {padding-top: 400px;}
+    .history .historyTitWrap {width: 1200px;}
+    .history .historyTitWrap h2 {font-size: 48px;}
+    .history .historyTitWrap p {font-size: 38px;}
+    .history .history-cont-txt {
+        width: 960px;
+        padding-left: 60px;
+    }
+    .history .history-cont-txt p {
+        font-size: 24px;
+        width: 511px;
+    }
+    .history .history-cont-txt a {font-size: 18px;}
+
+    /* 베스트 셀러 */
+    .best {padding-top: 400px;}
+    .best .bestWrap {padding-bottom: 400px;}
+    .best .bestTitWrap {width: 1200px;}
+    .best .bestTitWrap h2 {font-size: 48px;}
+    .best .bestTitWrap p {font-size: 38px;}
+    .best .bestContWrap {
+        margin-left: auto;
+        width: 1200px;
+    }
+    .best .best-cont-item h4 {font-size: 24px;}
+    .best .best-cont-img {
+        width: 384px;
+        height: 384px;
+    }
+    .best .best-cont-item .best-title {font-size: 24px;}
+    .best .price {font-size: 24px;}
+
+    /* 한정판 광고 */
+    .ad {height: 300px;}
+    .ad .ad-title h2 {font-size: 48px;}
+    .ad .ad-title a {font-size: 24px;}
+
+    /* 뱅앤올룹슨의 세계 */
+    .about {
+        margin-top: 400px;
+        margin-bottom: 400px;
+    }
+    .about .aboutWrap {width: 1200px;}
+    .about .aboutTitWrap h2 {font-size: 48px;}
+    .about .aboutTitWrap p {font-size: 38px;}
+    .about .about-cont-txt span {font-size: 20px;}
+    .about .about-cont-txt h2 {
+        font-size: 38px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .about .about-cont-txt p {
+        display: block;
+        font-size: 24px;
+        margin-bottom: 40px;
+    }
+    .about .about-cont-txt a {font-size: 16px;}
 }

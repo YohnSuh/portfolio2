@@ -1,3 +1,4 @@
+body {background-color: black;}
 header {
     position: fixed;
     top: 0;
@@ -121,9 +122,6 @@ header.mo-menu-on .util {display: flex;}
 .main button {display: none !important;}
 
 /* 카테고리 */
-.category {
-    background-color: black;
-}
 .category .cateWrap {
     padding-top: 100px;
     padding-bottom: 100px;
@@ -165,7 +163,7 @@ header.mo-menu-on .util {display: flex;}
 }
 .category .category-txt {
     display: none;
-    width: 300px;
+    width: 100%;
 }
 .category .category-txt p {font-size: 14px;}
 .category .category-txt a {
@@ -178,8 +176,8 @@ header.mo-menu-on .util {display: flex;}
 
 /* 카테고리 마우스 올린 후*/
 .category ul li:hover {
-    width: 300px;
-    height: 200px;
+    width: 90%;
+    height: 250px;
     line-height: unset;
 }
 .category ul li:hover > div {
@@ -187,3 +185,159 @@ header.mo-menu-on .util {display: flex;}
     bottom: 30px;
 }
 .category ul li:hover .category-txt {display: block;}
+
+/* 뱅앤올룹슨의 역사 */
+.history .historyTitWrap {
+    margin-left: 15px;
+    margin-bottom: 30px;
+}
+.history .historyTitWrap h2 {
+    font-size: 16px;
+    color: white;
+}
+.history .historyTitWrap p {
+    font-size: 14px;
+    color: white;
+}
+.history .history-cont-img {
+    width: 100%;
+    height: auto;
+}
+.history .history-cont-img img {
+    width: 100%;
+    object-fit: cover;
+}
+.history .history-cont-txt {
+    margin-top: 20px;
+    padding: 0 15px;
+    color: white;
+}
+.history .history-cont-txt p {font-size: 12px;}
+.history .history-cont-txt a {
+    display: inline-block;
+    font-size: 12px;
+    padding: 8px 24px;
+    border: 1px solid white;
+    margin-top: 20px;
+}
+
+/* 베스트셀러 */
+.best .bestWrap {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.best .bestContWrap {
+    margin-left: auto;
+    width: 100%;
+    padding-left: 15px;
+}
+.best .bestTitWrap {
+    margin-left: 15px;
+    margin-bottom: 30px;
+}
+.best .bestTitWrap h2 {
+    color: white;
+    font-size: 16px;
+}
+.best .bestTitWrap p {
+    color: white;
+    font-size: 14px;
+}
+.best .best-cont-item {
+    margin: 0 5px;
+}
+.best .best-cont-item h4 {
+    color: white;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+.best .best-cont-img {
+    width: 200px;
+    height: 200px;
+    background-color: #d0d0d0;
+}
+.best .best-cont-img img {
+    width: 100%;
+    object-fit: cover;
+}
+.best .best-cont-item .best-title {
+    display: inline-block;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    color: white;
+    font-size: 14px;
+}
+.best .price {
+    color: white;
+    font-size: 14px;
+}
+
+/* 한정판 광고 */
+.ad {
+    position: relative;
+    width: 100%;
+    height: 100px;
+}
+.ad video {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.ad .ad-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+.ad .ad-title h2 {font-size: 20px;}
+.ad .ad-title a {
+    display: inline-block;
+    padding: 8px 24px;
+    border: 1px solid white;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/* 뱅앤올룹슨의 세계 */
+.about {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.about .aboutWrap {
+    margin: 0 15px;
+}
+.about .aboutTitWrap {
+    color: white;
+    padding-bottom: 30px;
+}
+.about .aboutTitWrap h2 {font-size: 16px;}
+.about .aboutTitWrap p {font-size: 14px;}
+.about .aboutContWrap {width: 100%;}
+.about .about-cont-item {position: relative;}
+.about .about-cont-img img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.about .about-cont-txt {
+    position: absolute;
+    bottom: 5%;
+    left: 3%;
+    color: white;
+}
+.about .about-cont-txt span {
+    font-family: 'Pretendard-Light.ttf';
+    font-size: 12px;
+}
+.about .about-cont-txt h2 {font-size: 20px;}
+.about .about-cont-txt p {display: none;}
+.about .about-cont-txt a {
+    display: inline-block;
+    font-size: 12px;
+    padding: 8px 24px;
+    border: 1px solid white;
+    margin-top: 10px;
+}

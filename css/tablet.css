@@ -70,7 +70,7 @@
         display: inline-block;
         font-size: 14px;
         border: 1px solid white;
-        padding: 8px 24px;
+        padding: 8px 48px;
         margin-top: 30px;
     }
 
@@ -130,4 +130,96 @@
     .category ul li:hover > div {
         top: 50%;
     }
+
+    /* 뱅앤올룹슨의 역사 */
+    .history {padding-top: 200px;}
+    .history .historyTitWrap {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 50px;
+        width: 768px;
+    }
+    .history .historyTitWrap h2 {font-size: 38px;}
+    .history .historyTitWrap p {font-size: 24px;}
+    .history .historyContWrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .history .history-cont-txt {
+        margin-top: 0;
+        padding-left: 30px;
+        width: 384px;
+    }
+    .history .history-cont-txt p {
+        font-size: 16px;
+        width: 300px;
+    }
+    .history .history-cont-txt a {font-size: 14px;}
+
+    /* 베스트 셀러 */
+    .best {padding-top: 200px;}
+    .best .bestWrap {
+        padding-top: 0;
+        padding-bottom: 200px;
+    }
+    .best .bestTitWrap {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 50px;
+        width: 768px;
+    }
+    .best .bestTitWrap h2 {font-size: 38px;}
+    .best .bestTitWrap p {font-size: 24px;}
+    .best .bestContWrap {
+        margin-left: auto;
+        width: 768px;
+    }
+    .best .best-cont-item h4 {font-size: 16px;}
+    .best .best-cont-img {
+        width: 290px;
+        height: 290px;
+    }
+    .best .best-cont-item .best-title {font-size: 18px;}
+    .best .price {font-size: 18px;}
+
+    /* 한정판 광고 */
+    .ad {height: 150px;}
+    .ad .ad-title h2 {font-size: 32px;}
+    .ad .ad-title a {font-size: 18px;}
+
+    /* 뱅앤올룹슨의 세계 */
+    .about {
+        margin-top: 200px;
+        margin-bottom: 200px;
+    }
+    .about .aboutWrap {
+        margin: 0 auto 50px;
+        width: 768px;
+    }
+    .about .aboutTitWrap h2 {font-size: 38px;}
+    .about .aboutTitWrap p {font-size: 24px;}
+    .about .about-cont-item {
+        display: flex !important;
+        justify-content: space-between;
+    }
+    .about .about-cont-img {
+        width: 50%;
+    }
+    .about .about-cont-txt {
+        position: static;
+        width: 48%;
+    }
+    .about .about-cont-txt span {font-size: 16px;}
+    .about .about-cont-txt h2 {
+        font-size: 28px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .about .about-cont-txt p {
+        display: block;
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+    .about .about-cont-txt a {font-size: 14px;}
 }

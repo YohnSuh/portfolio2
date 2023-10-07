@@ -17,11 +17,28 @@ $(document).ready(function() {
     $('.mainWrap').slick({
         asNavFor : '.mainTextWrap'
     ,   autoplay : true
-    ,   autoplaySpeed : 5000
+    ,   autoplaySpeed : 8000
+    ,   arrows : false
     });
     $('.mainTextWrap').slick({
         asNavFor : '.mainWrap'
     ,   fade : true
+    ,   autoplay : true
+    ,   autoplaySpeed : 8000
+    ,   arrows : false
+    });
+
+    // 베스트셀러 슬라이드
+    $('.bestContWrap').slick({
+        slideToShow : 5
+    ,   variableWidth : true
+    ,   arrows : false
+    ,   infinite : false
+    });
+
+    // 뱅앤올룹슨의 세계 슬라이드
+    $('.aboutContWrap').slick({
+        arrows : false
     });
 });
 
