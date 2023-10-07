@@ -18,7 +18,8 @@ $(document).ready(function() {
         asNavFor : '.mainTextWrap'
     ,   autoplay : true
     ,   autoplaySpeed : 8000
-    ,   arrows : false
+    // ,   prevArrow : '.mainPrev'
+    // ,   nextArrow : '.mainNext'
     });
     $('.mainTextWrap').slick({
         asNavFor : '.mainWrap'

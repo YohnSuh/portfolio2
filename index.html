@@ -9,9 +9,13 @@
     <link href="css/tablet.css" rel="stylesheet">
     <link href="css/pc.css" rel="stylesheet">
     <link href="css/slick.css" rel="stylesheet">
+    <!-- aos 라이브러리-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"> 
     <script src="https://kit.fontawesome.com/7c72cc71ff.js" crossorigin="anonymous"></script>
     <script src="js/jquery-3.7.0.min.js"></script>
     <script src="js/plugin/slick.min.js"></script>
+    <!-- aos 라이브러리 -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/style.js"></script>
 </head>
 <body>
@@ -148,16 +152,31 @@
 
     <!-- 뱅앤올룹슨의 역사-->
     <div class="history">
-        <div class="historyTitWrap">
-            <h2>THE HISTORY OF<br>
-                BANG & OLUFSEN</h2>
+        <div class="historyTitWrap"
+             data-aos="fade-up"
+             data-aos-easing="ease-out"
+             data-aos-duration="1000"
+             data-aos-once="false">
+            <h2>
+                THE HISTORY OF<br>
+                BANG & OLUFSEN
+            </h2>
             <p>뱅앤올룹슨의 역사</p>
         </div><!--historyTitWrap-->
         <div class="historyContWrap">
-            <div class="history-cont-img">
+            <div class="history-cont-img"
+                 data-aos="fade-up-right"
+                 data-aos-easing="ease-in-out"
+                 data-aos-delay="500"
+                 data-aos-duration="1000"
+                 data-aos-once="false">
                 <img src="images/history.webp">
             </div><!--history-cont-img-->
-            <div class="history-cont-txt">
+            <div class="history-cont-txt"
+                 data-aos="fade-up"
+                 data-aos-delay="500"
+                 data-aos-duration="1000"
+                 data-aos-once="false">
                 <p>1925년, 덴마크의 한 농장에서 Peter Bang과 Svend Olufsen은 배터리를 사용하지 않고 벽에 꽂을 수 있는 최초의 대량 생산 라디오인 The Eliminator를 개발하면서 라디오를 재창조했습니다. 한 세기가 지난 지금, 그러한 사업가적 혁신 정신은 당사의 모든 제품에 녹아들어 있습니다. 인간이 세상을 듣고 보고 느끼는 방식을 변화시키고자 하는 것, 그것이 바로 당사를 움직이는 힘입니다.</p>
                 <a href="#">View More</a>
             </div><!--history-cont-txt-->
@@ -167,12 +186,21 @@
     <!-- bestseller -->
     <div class="best">
         <div class="bestWrap">
-            <div class="bestTitWrap">
-                <h2>BEST<br>
-                    SELLERS</h2>
+            <div class="bestTitWrap"
+                 data-aos="fade-up"
+                 data-aos-easing="ease-out"
+                 data-aos-duration="1000"
+                 data-aos-once="false">
+                <h2>
+                    BEST<br>
+                    SELLERS
+                </h2>
                 <p>인기 상품</p>
             </div><!--bestTitWrap-->
-            <ul class="bestContWrap">
+            <ul class="bestContWrap"
+                data-aos="fade-left"
+                data-aos-duration="1000"
+                data-aos-once="false">
                 <!-- 베스트 상품1 -->
                 <li class="best-cont-item">
                     <a href="#"><h4>headphone</h4></a>
@@ -339,12 +367,23 @@
     <!-- 뱅앤올룹슨의 세계 -->
     <div class="about">
         <div class="aboutWrap">
-            <div class="aboutTitWrap">
-                <h2>THE WORLD OF<br>
-                    BANG & OLUFSEN</h2>
+            <div class="aboutTitWrap"
+                 data-aos="fade-up"
+                 data-aos-easing="ease-out"
+                 data-aos-duration="1000"
+                 data-aos-once="false">
+                <h2>
+                    THE WORLD OF<br>
+                    BANG & OLUFSEN
+                </h2>
                 <p>뱅앤올룹슨의 세계</p>
             </div><!--aboutTitWrap-->
-            <div class="aboutContWrap">
+            <div class="aboutContWrap"
+                 data-aos="fade-in"
+                 data-aos-easing="ease-out"
+                 data-aos-delay="500"
+                 data-aos-duration="1000"
+                 data-aos-once="false">
                 <div class="about-cont-item">
                     <div class="about-cont-img">
                         <img src="images/story1.webp">
@@ -383,5 +422,37 @@
             </div><!--aboutContWrap-->
         </div><!--aboutWrap-->
     </div><!--about-->
+    
+    <!-- 매장 찾기 -->
+    <div class="store">
+        <div class="storeWrap">
+            <div class="storeTitWrap">
+                <h2>
+                    FIND<br>
+                    STORE
+                </h2>
+                <p>매장찾기</p>
+            </div><!--storeTitWrap-->
+            <form>
+                <input type="text" placeholder="가까운 매장을 찾아보세요.">
+                <button class="search"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+        </div><!--storeWrap-->
+    </div><!--store-->
+    <!-- 푸터 -->
+    <footer>
+        
+    </footer>
+
+    <script>
+        // aos 라이브러리
+        AOS.init({
+			once: true
+		});
+
+		$(window).on('load', function () {
+            AOS.refresh(); 
+        });
+    </script>
 </body>
 </html>

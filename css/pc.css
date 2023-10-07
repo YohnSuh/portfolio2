@@ -91,4 +91,25 @@
         margin-bottom: 40px;
     }
     .about .about-cont-txt a {font-size: 16px;}
+
+    /* 매장 찾기 */
+    .store {
+        height: 300px;
+    }
+    .store .storeWrap {
+        margin: 0 auto;
+        width: 1200px;
+    }
+    .store .storeTitWrap h2 {font-size: 48px;}
+    .store .storeTitWrap p {font-size: 38px;}
+    .store form {height: 50px;}
+    .store form input {
+        font-size: 20px;
+        padding: 0 50px 0 10px;
+    }
+    .store input::placeholder {font-size: 20px;}
+    .store form .search {
+        width: 50px;
+        font-size: 24px;
+    }
 }

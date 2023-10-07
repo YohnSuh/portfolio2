@@ -30,7 +30,6 @@
     /* main */
     .main {
         position: relative;
-        background-color: black;
         height: 100vh;
     }
     .main .mainWrap {
@@ -53,11 +52,11 @@
     }
     .main .main-mo-box {display: none;}
     .main .mainTextWrap {
-        display: inline;
+        display: block;
         position: absolute;
         width: 550px;
-        top: 200px;
-        left: 100px;
+        top: 40%;
+        left: 10%;
         color: white;
     }
     .main .mainTextWrap h2 {font-size: 64px;}
@@ -72,6 +71,29 @@
         border: 1px solid white;
         padding: 8px 48px;
         margin-top: 30px;
+    }
+    /* main 슬라이드 버튼 */
+    .main .mainWrap button {
+        display: block !important;
+        position: absolute;
+        bottom: 0;
+        border: 0;
+        width: 25px;
+        height: 25px;
+        font-size: 0;
+        background-color: white;
+        opacity: .3;
+        z-index: 99;
+    }
+    .main .mainWrap .slick-prev {right: 25px;}
+    .main .mainWrap .slick-next {right: 0;}
+    .main .mainWrap .slick-prev::before {
+        content: '<';
+        font-size: 20px;
+    }
+    .main .mainWrap .slick-next::before {
+        content: '>';
+        font-size: 20px;
     }
 
     /* 카테고리 */
@@ -112,6 +134,7 @@
         transform: translate(-50%, -50%);
         padding: 0 30px;
         box-sizing: border-box;
+        transition: padding-bottom .5s;
     }
     .category .category-txt {
         width: 25vw;
@@ -120,16 +143,18 @@
     }
     .category .category-txt p {font-size: 16px;}
     .category .category-txt a {font-size: 14px;}
+
     /* 마우스 올린 후 */
     .category ul li:hover {
         width: 100%;
         height: 100vh;
     }
-    .category ul li:hover h2 {position: relative; top: 0;}
-    .category ul li:hover:before {opacity: 0;}
-    .category ul li:hover > div {
-        top: 50%;
+    .category ul li:hover h2 {
+        top: 0;
+        padding-bottom: 50px;
     }
+    .category ul li:hover:before {opacity: 0;}
+    .category ul li:hover > div {top: 50%;}
 
     /* 뱅앤올룹슨의 역사 */
     .history {padding-top: 200px;}
@@ -222,4 +247,25 @@
         margin-bottom: 20px;
     }
     .about .about-cont-txt a {font-size: 14px;}
-}
+
+    /* 매장 찾기 */
+    .store {
+        height: 240px;
+    }
+    .store .storeWrap {
+        margin: 0 auto;
+        width: 768px;
+    }
+    .store .storeTitWrap h2 {font-size: 38px;}
+    .store .storeTitWrap p {font-size: 24px;}
+    .store form {height: 40px;}
+    .store form input {
+        font-size: 16px;
+        padding: 0 45px 0 10px;
+    }
+    .store input::placeholder {font-size: 16px;}
+    .store form .search {
+        width: 45px;
+        font-size: 18px;
+    }
+}   
