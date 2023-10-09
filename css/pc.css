@@ -3,7 +3,6 @@
         width: 1200px;
     }
     header .gnb li {
-        padding: 0 25px;
         font-size: 16px;
     }
 
@@ -11,9 +10,7 @@
     .main .mainWrap {
         width: 1200px;
     }
-    .main div[class^="main-item"] {
-        height: 678px;
-    }
+    .main video {height: 678px;}
     .main .mainTextWrap {
         left: 100px;
         width: 700px;
@@ -112,4 +109,9 @@
         width: 50px;
         font-size: 24px;
     }
+
+    /* 푸터 */
+    footer .fWrap {width: 1200px;}
+    footer .footer-menu-item h2 {margin-right: 80px;}
+
 }

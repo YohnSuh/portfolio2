@@ -22,7 +22,6 @@ header .hWrap {
     padding-right: 15px;
     padding-top: 20px;
     padding-bottom: 20px;
-    /* background-color: black; */
     color: white;
 }
 header .header-logo-menu {
@@ -389,3 +388,37 @@ header.mo-menu-on .hamburger span:nth-child(3) {top: calc(50% - 2px);transform: 
     background-color: transparent;
     cursor: pointer;
 }
+
+/* 푸터 */
+footer {width: 100%;}
+footer .footer-menu {margin: 30px 0;}
+footer .footer-menu-item {text-align: center;}
+footer .footer-menu-item h2 {
+    color: white;
+    font-size: 12px;
+    padding-top: 15px;
+    padding-bottom: 5px;
+    cursor: pointer;
+}
+footer .footer-menu-item h2 i {transition: .5s;}
+footer .footer-menu-item li {
+    color: white;
+    font-size: 12px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+footer .copyright {
+    font-size: 12px;
+    color: #999999;
+    text-align: center;
+    border-top: 1px solid #999;
+    padding-top: 10px;
+    margin-bottom: 50px;
+}
+footer .copyright p {padding-bottom: 5px;}
+
+/* 푸터 메뉴 아코디언 */
+footer .footer-menu-item ul {display: none;}
+footer .footer-menu-item h2:hover,
+footer .footer-menu-item h2.on {color: #ffc356;}
+footer .footer-menu-item h2.on i {transform: rotate(-180deg);}

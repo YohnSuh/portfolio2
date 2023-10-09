@@ -18,8 +18,7 @@ $(document).ready(function() {
         asNavFor : '.mainTextWrap'
     ,   autoplay : true
     ,   autoplaySpeed : 8000
-    // ,   prevArrow : '.mainPrev'
-    // ,   nextArrow : '.mainNext'
+    ,   arrows : false
     });
     $('.mainTextWrap').slick({
         asNavFor : '.mainWrap'
@@ -32,6 +31,7 @@ $(document).ready(function() {
     // 베스트셀러 슬라이드
     $('.bestContWrap').slick({
         slideToShow : 5
+    ,   slideToScroll : 3
     ,   variableWidth : true
     ,   arrows : false
     ,   infinite : false
@@ -40,6 +40,17 @@ $(document).ready(function() {
     // 뱅앤올룹슨의 세계 슬라이드
     $('.aboutContWrap').slick({
         arrows : false
+    ,   autoplay : true
+    ,   autoplaySpeed : 3000
+    });
+
+    // 푸터 아코디언
+    $('footer h2').click(function() {
+        $(this).next().stop().slideToggle();
+        $(this).parent().siblings().find('ul').stop().slideUp();
+
+        $(this).toggleClass('on');
+        $(this).parent().siblings().find('h2').removeClass('on');
     });
 });
 
