@@ -66,7 +66,8 @@ header .util {
 header .util li {
     padding: 0 10px;
 }
-
+/* 헤더 마우스 오버 */
+header li:hover {color: #ffc356;}
 /* 헤더 제이쿼리 적용 */
 header.mo-menu-on .header-bg {display: block;}
 header.mo-menu-on .hWrap {background-color: black;}
@@ -75,7 +76,10 @@ header.mo-menu-on .util {display: flex;}
 header.mo-menu-on .hamburger span:nth-child(1) {top: calc(50% - 2px);transform: rotate(45deg);}
 header.mo-menu-on .hamburger span:nth-child(2) {opacity: 0;}
 header.mo-menu-on .hamburger span:nth-child(3) {top: calc(50% - 2px);transform: rotate(-45deg);}
-
+header.mo-bg-color {
+    background-color: rgba(0,0,0,.3);
+    backdrop-filter: blur(1px);
+}
 /* 모바일 메인 */
 .main {
     width: 100%;
@@ -416,7 +420,8 @@ footer .copyright {
     margin-bottom: 50px;
 }
 footer .copyright p {padding-bottom: 5px;}
-
+/* 푸터 마우스 오버 */
+footer li:hover {color: #ffc356;}
 /* 푸터 메뉴 아코디언 */
 footer .footer-menu-item ul {display: none;}
 footer .footer-menu-item h2:hover,

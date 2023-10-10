@@ -9,6 +9,15 @@ function mBackgroundOn() {
     $('header').removeClass('mo-menu-on');
 };
 $(document).ready(function() {
+    // 모바일 헤더 스크롤 시
+    $(window).on('scroll', function() {
+        if($(window).scrollTop()) {
+            $('header').addClass('mo-bg-color');
+        } else {
+            $('header').removeClass('mo-bg-color');
+        }
+    });
+
     // 모바일에서 햄버거 메뉴 클릭 시
     $('.hamburger').click(hamMenuClick);
     $('.header-bg').click(mBackgroundOn);
