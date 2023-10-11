@@ -28,6 +28,14 @@ $(document).ready(function() {
     ,   autoplay : true
     ,   autoplaySpeed : 8000
     ,   arrows : false
+    ,   responsive: [
+            {
+                breakpoint: 769,
+                on : $(".mainWrap").on("breakpoint", function(a,b,c) {
+                    AOS.refresh();
+                })
+            }
+        ]
     });
     $('.mainTextWrap').slick({
         asNavFor : '.mainWrap'
