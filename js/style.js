@@ -8,6 +8,7 @@ function mBackgroundOn() {
     $('.header_bg').removeClass('mo-bg-on');
     $('header').removeClass('mo-menu-on');
 };
+
 $(document).ready(function() {
     // 모바일 헤더 스크롤 시
     $(window).on('scroll', function() {
@@ -50,7 +51,7 @@ $(document).ready(function() {
     $('.aboutContWrap').slick({
         arrows : false
     ,   autoplay : true
-    ,   autoplaySpeed : 3000
+    ,   autoplaySpeed : 2000
     });
 
     // 푸터 아코디언
@@ -62,5 +63,3 @@ $(document).ready(function() {
         $(this).parent().siblings().find('h2').removeClass('on');
     });
 });
-
-    
