@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 // 모바일 햄버거 아이콘 클릭
 function hamMenuClick() {
     $('.header-bg').toggleClass('mo-bg-on');
@@ -64,7 +63,6 @@ $(document).ready(function() {
         $(this).parent().siblings().find('h2').removeClass('on');
     });
 });
-=======
 // 모바일 햄버거 아이콘 클릭
 function hamMenuClick() {
     $('.header-bg').toggleClass('mo-bg-on');
@@ -137,6 +135,3 @@ $(document).ready(function() {
         $(this).parent().siblings().find('h2').removeClass('on');
     });
 });
-
-    
->>>>>>> 1c9299673c4dbdeace4fd913e462e178d3b7a55b
